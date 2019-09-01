@@ -2,7 +2,7 @@
 class KubernetesJobUi < Formula
   desc ""
   homepage ""
-  version "0.2.0"
+  version "0.1.0"
 
   if OS.mac?
     url "https://github.com/lhopki01/kubernetes-job-ui/releases/download/v0.2.0/kubernetes-job-ui_0.2.0_Darwin_x86_64.tar.gz"
