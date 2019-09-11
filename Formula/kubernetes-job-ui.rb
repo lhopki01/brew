@@ -2,16 +2,16 @@
 class KubernetesJobUi < Formula
   desc ""
   homepage ""
-  version "0.1.1"
+  version "0.1.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/lhopki01/kubernetes-job-ui/releases/download/v0.1.1/kubernetes-job-ui_0.1.1_Darwin_x86_64.tar.gz"
-    sha256 "0eb39e1c7dbca97fc73e29417fdea79ef6cea90541f3a4ee71b83058e5f2b177"
+    url "https://github.com/lhopki01/kubernetes-job-ui/releases/download/v0.1.2/kubernetes-job-ui_0.1.2_Darwin_x86_64.tar.gz"
+    sha256 "acdbedee6fc5e4c0225c5b2527881e20b863ea4d36379904778c2de6457cd0db"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/lhopki01/kubernetes-job-ui/releases/download/v0.1.1/kubernetes-job-ui_0.1.1_Linux_x86_64.tar.gz"
-      sha256 "fb9af515a749737ab73cb9c9eb0cb15100eb583c169c472c01e1ee7ed8914d9e"
+      url "https://github.com/lhopki01/kubernetes-job-ui/releases/download/v0.1.2/kubernetes-job-ui_0.1.2_Linux_x86_64.tar.gz"
+      sha256 "9635db894ad64028f058278205a2cf528eec37432427cc682ff89daaea733b95"
     end
   end
 
