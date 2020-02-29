@@ -2,16 +2,16 @@
 class Dirin < Formula
   desc ""
   homepage ""
-  version "0.2.1"
+  version "0.2.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/lhopki01/dirin/releases/download/v0.2.1/dirin_0.2.1_Darwin_x86_64.tar.gz"
-    sha256 "26e485a2ea300c3fbb68ae68550f64e54fa700fdfc3532bd2ed403ccdcc331bc"
+    url "https://github.com/lhopki01/dirin/releases/download/v0.2.2/dirin_0.2.2_Darwin_x86_64.tar.gz"
+    sha256 "de349811bd8ac9695bcde2870c2bf3402f2f2ab6c7b6eb8b5aac634807486467"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/lhopki01/dirin/releases/download/v0.2.1/dirin_0.2.1_Linux_x86_64.tar.gz"
-      sha256 "afe664f13f6557e5ea43cc5e0e4e9d26fa1cb349fc54830ff7b652390a16626e"
+      url "https://github.com/lhopki01/dirin/releases/download/v0.2.2/dirin_0.2.2_Linux_x86_64.tar.gz"
+      sha256 "908a8aa7df43607e2c1b44367b9a2e4d5592d30fdcb465b42c18647984cc5e10"
     end
   end
 
