@@ -2,16 +2,16 @@
 class GitMassSync < Formula
   desc "Tool to keep multiple local repos in sync with github"
   homepage ""
-  version "2.1.0"
+  version "2.2.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/lhopki01/git-mass-sync/releases/download/v2.1.0/git-mass-sync_2.1.0_Darwin_x86_64.tar.gz"
-    sha256 "317cd021c13cd1af89c99332edaff4a7b5649870aefe589371c6998450e255de"
+    url "https://github.com/lhopki01/git-mass-sync/releases/download/v2.2.1/git-mass-sync_2.2.1_Darwin_x86_64.tar.gz"
+    sha256 "4f8299b6f10dc1b587af919e3ddb5420f1782baea02ca6a60a95fce4e5ecdaa1"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/lhopki01/git-mass-sync/releases/download/v2.1.0/git-mass-sync_2.1.0_Linux_x86_64.tar.gz"
-      sha256 "5ce040895de2beb6af7d335566ee323a983dd2244d077ad70e8ec4b69d22a6cb"
+      url "https://github.com/lhopki01/git-mass-sync/releases/download/v2.2.1/git-mass-sync_2.2.1_Linux_x86_64.tar.gz"
+      sha256 "ff06898a7f2f3c0fada9087a463b29b3586b1f246f86e4bd683c6e53d4152af9"
     end
   end
   
