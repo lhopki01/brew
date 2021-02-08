@@ -5,20 +5,20 @@
 class GitMassSync < Formula
   desc "Tool to keep multiple local repos in sync with github"
   homepage "https://github.com/lhopki01/git-mass-sync"
-  version "2.3.3"
+  version "2.3.4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/lhopki01/git-mass-sync/releases/download/v2.3.3/git-mass-sync_2.3.3_Darwin_x86_64.tar.gz"
-    sha256 "ae4303090905b0a1b58ab4c536a965a82fa217abdcac0d23ffca49a4cbcf435a"
+    url "https://github.com/lhopki01/git-mass-sync/releases/download/v2.3.4/git-mass-sync_2.3.4_Darwin_x86_64.tar.gz"
+    sha256 "9382dedc39a50cfd505effc8f00309830ba2364da86ee1ea9909832b2aa0596b"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/lhopki01/git-mass-sync/releases/download/v2.3.3/git-mass-sync_2.3.3_Linux_x86_64.tar.gz"
-    sha256 "3521c5d2dd5c9dafbe7095b63d9cd048345c32a3d2f5681796a2cc5fa3bb016a"
+    url "https://github.com/lhopki01/git-mass-sync/releases/download/v2.3.4/git-mass-sync_2.3.4_Linux_x86_64.tar.gz"
+    sha256 "53e26dab185eb973b6095e8fef4a3e7fc6f73207fd65222659396fa51f151c0b"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/lhopki01/git-mass-sync/releases/download/v2.3.3/git-mass-sync_2.3.3_Linux_arm64.tar.gz"
-    sha256 "220f70c394ab5f5fee7abd2fa7d12e9549b1e5e4781536c6f8d2a29a6845ccf3"
+    url "https://github.com/lhopki01/git-mass-sync/releases/download/v2.3.4/git-mass-sync_2.3.4_Linux_arm64.tar.gz"
+    sha256 "36c854ad17c16aed4c1e130f282f6b150110e5716c469f0a19b735ade20f8639"
   end
 
   depends_on "git"
