@@ -5,20 +5,23 @@
 class GitMassSync < Formula
   desc "Tool to keep multiple local repos in sync with github"
   homepage "https://github.com/lhopki01/git-mass-sync"
-  version "2.4.1"
+  version "2.5.2"
+
+  depends_on "git"
+  depends_on "hub"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/lhopki01/git-mass-sync/releases/download/v2.4.1/git-mass-sync_2.4.1_Darwin_arm64.tar.gz"
-      sha256 "76298254d30cf72381a960b94de075787bf344477db3e01faed50790e59ce2dd"
+      url "https://github.com/lhopki01/git-mass-sync/releases/download/v2.5.2/git-mass-sync_2.5.2_Darwin_arm64.tar.gz"
+      sha256 "aa88bf5acbbadb1897cf8b940ac01c27ebf4ac57d1dbe1be2745094fdd683bd3"
 
       def install
         bin.install "git-mass-sync"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lhopki01/git-mass-sync/releases/download/v2.4.1/git-mass-sync_2.4.1_Darwin_x86_64.tar.gz"
-      sha256 "a073234a8b4cce4c923489240dc4d330431e60e735c6487ea007ce144717dfd7"
+      url "https://github.com/lhopki01/git-mass-sync/releases/download/v2.5.2/git-mass-sync_2.5.2_Darwin_x86_64.tar.gz"
+      sha256 "99fa23941af64d6b3fa1a4eae82f846459805bf021035783ada87b302f8abccc"
 
       def install
         bin.install "git-mass-sync"
@@ -28,23 +31,20 @@ class GitMassSync < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lhopki01/git-mass-sync/releases/download/v2.4.1/git-mass-sync_2.4.1_Linux_arm64.tar.gz"
-      sha256 "3f23d17a235ebeb96cbc4fbcc08cd90e620a17a4ca3ef0bcf2d30462bfe4bbb7"
+      url "https://github.com/lhopki01/git-mass-sync/releases/download/v2.5.2/git-mass-sync_2.5.2_Linux_arm64.tar.gz"
+      sha256 "09c4e245716772ef5a1a68c8c784c38bee9ea74759fbdc4f504415a7703ef501"
 
       def install
         bin.install "git-mass-sync"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lhopki01/git-mass-sync/releases/download/v2.4.1/git-mass-sync_2.4.1_Linux_x86_64.tar.gz"
-      sha256 "4fc6162e4b271e7d9ebe41319ea31a059cafdbde227dd9136949860a106c79f7"
+      url "https://github.com/lhopki01/git-mass-sync/releases/download/v2.5.2/git-mass-sync_2.5.2_Linux_x86_64.tar.gz"
+      sha256 "fe0ffb25b76465497f7e339f1bb1e6b2b0b036fa25c6edb76b53ff98c15586e2"
 
       def install
         bin.install "git-mass-sync"
       end
     end
   end
-
-  depends_on "git"
-  depends_on "hub"
 end
